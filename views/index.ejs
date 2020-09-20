@@ -9,13 +9,14 @@
     <script src="/js/bootstrap.min.js"></script>
 </head>
 <body>
+    <div class="container">
     <h1>URL Shrinker</h1>
-    <form action="" method="post">
-        <label for="fullUrl">Url</label>
-        <input type="url" id="fullUrl" name="fullUrl">
+    <form action="" method="post" class="my-4 form-inline">
+        <label for="fullUrl" class="sr-only">Url</label>
+        <input type="url" id="fullUrl" name="fullUrl" required placeholder="Url" class="form-control mr-2 col">
         <button type="submit" class="btn btn-primary">Shrink</button>
     </form>
-    <table class="table table-bordered table-hover">
+    <table class="table table-bordered table-hover table-striped">
         <thead>
             <tr>
                 <th>Full URL</th>
@@ -33,5 +34,6 @@
             <td>10</td>
         </tbody>
     </table>
+</div>
 </body>
 </html>
