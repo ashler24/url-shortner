@@ -4,8 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <h1>Hello World</h1>
+    <h1>URL Shrinker</h1>
+    <form action="" method="post">
+        <label for="fullUrl">Url</label>
+        <input type="url" id="fullUrl" name="fullUrl">
+        <button type="submit" class="btn btn-primary">Shrink</button>
+    </form>
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>Full URL</th>
+                <th>Short URL</th>
+                <th>Clicks</th>
+            </tr>
+        </thead>
+        <tbody>
+            <td>
+                <a href="https://github.com/">https://github.com</a>
+            </td>
+            <td>
+                <a href="/12345">12345</a>
+            </td>
+            <td>10</td>
+        </tbody>
+    </table>
 </body>
 </html>
